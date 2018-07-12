@@ -1,0 +1,6 @@
+plugin:
+    name: 'pikanji.plaincookie::plugin.name'
+    description: 'pikanji.plaincookie::plugin.description'
+    author: 'pikanji.plaincookie::plugin.author'
+    icon: oc-icon-unlock-alt
+    homepage: 'https://github.com/pikanji/oc-plaincookie-plugin'

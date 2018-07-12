@@ -1,0 +1,29 @@
+{
+    "name": "pikanji/plaincookie-plugin",
+    "type": "october-plugin",
+    "description": "Enable non-encrypted cookies",
+    "keywords": ["october", "cms", "pikanji", "cookie", "plugin"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kanji Furuhashi",
+            "email": "kanji.furuhashi@cocci.co",
+            "role": "Co-founder"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "composer/installers": "~1.0"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "autoload": {
+        "classmap": [
+            "classes/Cookie/Middleware/EncryptCookies.php",
+            "classes/Foundation/Http/Kernel.php"
+        ]
+    }
+}
