@@ -9,6 +9,8 @@ This plugin lets the developer to specify cookies that should not be encrypted.
 
 This is useful when you want to let the backend code to read the cookie value set in frontend.
 
+This plugin becomes unnecessary when [this PR](https://github.com/octobercms/library/pull/335) is merged & released.
+
 ## Usage
 ### Installation
 You can install this plugin via composer. Execute below at the root of your project.

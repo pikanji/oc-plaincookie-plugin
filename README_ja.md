@@ -5,6 +5,8 @@
 OctoberCMSはCookieを常に暗号化するため、例えばフロントエンドで設定したCookieを正常に読み込むことができません。
 このプラグインは、指定したCookieの暗号化を無効にします。
 
+[このPR](https://github.com/octobercms/library/pull/335)がマージ＆リリースされたら、このプラグインは不要になります。
+
 ## 使い方
 ### インストール
 下記コマンドでComposerからインストールします。
