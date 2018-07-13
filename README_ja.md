@@ -26,7 +26,7 @@ $app->singleton(
 暗号化を無効にするCookieを指定する方法は２通りあります。
 
 #### 設定ファイルから
-`config/cookie.php`を作成し、暗号化を無効にしたいCookieの名前の配列を`no_encrypt`として返します。
+`config/cookie.php`を作成し、暗号化を無効にしたいCookieの名前の配列を`unencrypted_cookies`として返します。
 
 例：
 
@@ -42,7 +42,7 @@ return [
     | List the key of cookies that you do NOT want to encrypt.
     |
     */
-    "no_encrypt" => [
+    "unencrypted_cookies" => [
         "my_cookie",
     ],
 ];
@@ -51,6 +51,6 @@ return [
 #### プログラムから
 `Config` ファサードで設定を追加することもできます。
 ```
-Config::push('cookie.no_encrypt', "my_cookie");
+Config::push('cookie.unencrypted_cookies', "my_cookie");
 ```
 

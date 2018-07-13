@@ -48,7 +48,7 @@ return [
     | List the key of cookies that you do NOT want to encrypt.
     |
     */
-    "no_encrypt" => [
+    "unencrypted_cookies" => [
         "my_cookie",
     ],
 ];
@@ -57,6 +57,6 @@ return [
 #### From Code
 Use `Config` facade to add from your `Plugin::boot()`.
 ```
-Config::push('cookie.no_encrypt', "my_cookie");
+Config::push('cookie.unencrypted_cookies', "my_cookie");
 ```
 
