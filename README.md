@@ -44,13 +44,13 @@ Example
 return [
     /*
     |--------------------------------------------------------------------------
-    | Cookies No Encryption
+    | Cookies that should not be encrypted
     |--------------------------------------------------------------------------
     |
     | List the key of cookies that you do NOT want to encrypt.
     |
     */
-    "unencrypted_cookies" => [
+    "unencryptedCookies" => [
         "my_cookie",
     ],
 ];
@@ -59,6 +59,6 @@ return [
 #### From Code
 Use `Config` facade to add from your `Plugin::boot()`.
 ```
-Config::push('cookie.unencrypted_cookies', "my_cookie");
+Config::push('cookie.unencryptedCookies', "my_cookie");
 ```
 

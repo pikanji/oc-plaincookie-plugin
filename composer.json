@@ -25,5 +25,10 @@
             "classes/Cookie/Middleware/EncryptCookies.php",
             "classes/Foundation/Http/Kernel.php"
         ]
+    },
+    "scripts": {
+        "post-update-cmd": [
+            "echo 'Please note that configuration key has been changed from unencrypted_cookies to unencryptedCookies.'"
+        ]
     }
 }
